@@ -10,8 +10,7 @@ function twoSum(nums: number[], target: number): number[] {
     let index2 = 0
     nums.forEach((a, b)=> {
         nums.forEach((c, d)=> {
-            if(b === d)return
-            if((a + c) === target){
+            if(Number(a + c) === target && d > b){
                 index1 = b
                 index2 = d
             }
